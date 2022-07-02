@@ -1,0 +1,499 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./resources/css/plan.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200;1,400&family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,400;1,9..144,500;1,9..144,700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <title>Frontend Mentor | Coffeeroasters subscription site</title>
+</head>
+
+<body>
+  <header>
+    <div class="desktopLogo">
+      <a href="./index.html">
+        <img src="./assets/home/Combined Shape.png" alt="Coffee Beans">
+        <img src="./assets/home/coffeeroasters.png" alt="coffeeroasters">
+      </a>
+
+    </div>
+
+    <div>
+      <div class="menu-container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+    </div>
+    <div class="menu">
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About us</a></li>
+          <li><a href="./plan.html">Create your plan</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="main-section">
+    <div class="main-section-text">
+      <h1>
+        Create a plan
+      </h1>
+      <p>
+
+        Build a subscription plan that best fits your needs. We offer an assortment of the best
+        artisan coffees from around the globe delivered fresh to your door.
+      </p>
+
+
+    </div>
+  </section>
+
+  <section class="picks-container">
+    <div class="divider">
+      <div class="round">
+      </div>
+      <div class="line">
+      </div>
+      <div class="round">
+      </div>
+      <div class="line">
+      </div>
+      <div class="round">
+      </div>
+    </div>
+    <div class="pick-options">
+
+      <div class="picks">
+        <h1>01</h1>
+        <h2>Pick your coffee</h2>
+        <p>Select from our evolving range of artisan coffees. Our beans are ethically
+          sourced and we pay fair prices for them. There's new coffees in all profiles
+          every month for you to try out.</p>
+      </div>
+
+      <div class="picks">
+        <h1>02</h1>
+        <h2>Choose the frequency</h2>
+        <p>Customize your order frequency, quantity, even your roast style and grind type.
+          Pause, skip or cancel your subscription with no commitment through our online portal.</p>
+      </div>
+
+      <div class="picks">
+        <h1>03</h1>
+        <h2>Receive and enjoy!</h2>
+        <p>We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="selection">
+
+    <div class="order-menu">
+
+      <nav>
+        <ul>
+          <li><a class="pageNav" href="#taste"><span>01</span>Preferences</a></li>
+          <!-- <hr> -->
+          <li><a class="pageNav" href="#typeOfCoffe"><span>02</span>Bean type</a></li>
+          <!-- <hr> -->
+          <li><a class="pageNav" href="#amount"><span>03</span>Quantity</a></li>
+          <!-- <hr> -->
+          <li><a class="pageNav" id="grind-nav" href="#grindPref"><span>04</span>Grind option</a></li>
+          <!-- <hr> -->
+          <li><a class="pageNav" href="#deliveryPref"><span>05</span>Deliveries</a></li>
+
+        </ul>
+      </nav>
+
+    </div>
+
+    <div class="order-selcetion">
+      <!-- new -->
+      <div class="order-row">
+        <div class="order-heading">
+          <div class="order-heading-text">
+            <h1>How do you drink your coffee?</h1>
+          </div>
+
+          <div id="arrow-taste" class="order-heading-arrow">
+            <span class="arrow" (click)="toggleOpen($event)">
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="order-column" id="taste">
+
+        <div class="order-items">
+          <h2>
+            Capsule
+          </h2>
+          <p>
+            Compatible with Nespresso systems and similar brewers
+          </p>
+        </div>
+
+        <div class="order-items">
+          <h2>
+            Filter
+          </h2>
+          <p>
+            For pour over or drip methods like Aeropress, Chemex, and V60
+          </p>
+        </div>
+
+        <div class="order-items">
+          <h2>
+            Espresso
+          </h2>
+          <p>
+            Dense and finely ground beans for an intense, flavorful experience
+          </p>
+        </div>
+
+      </div>
+
+
+      <!-- new -->
+      <div class="order-row">
+        <div class="order-heading">
+          <div class="order-heading-text">
+            <h1>What type of coffee?&emsp;&emsp;&emsp;&emsp;&emsp;</h1>
+          </div>
+
+          <div id="arrow-typeOfCoffe" class="order-heading-arrow">
+            <span class="arrow" (click)="toggleOpen($event)">
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="order-column" id="typeOfCoffe">
+
+        <div class="order-items">
+          <h2>
+            Single origin
+          </h2>
+          <p>
+            Distinct, high quality coffee from a specific family-owned farm
+          </p>
+        </div>
+
+        <div class="order-items">
+          <h2>
+            Decaf
+          </h2>
+          <p>
+            Just like regular coffee, except the caffeine has been removed
+          </p>
+        </div>
+
+        <div class="order-items">
+          <h2>
+            Blended
+          </h2>
+          <p>
+            Combination of two or three dark roasted beans of organic coffees
+          </p>
+        </div>
+
+      </div>
+
+
+      <!-- new -->
+
+      <div class="order-row">
+        <div class="order-heading">
+          <div class="order-heading-text">
+            <h1>How much would you like?&emsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+          </div>
+
+          <div id="arrow-amount" class="order-heading-arrow">
+            <span class="arrow" (click)="toggleOpen($event)">
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="order-column" id="amount">
+
+        <div class="order-items">
+          <h2>
+            250g
+          </h2>
+          <p>
+            Perfect for the solo drinker. Yields about 12 delicious cups.
+          </p>
+        </div>
+
+        <div class="order-items">
+          <h2>
+            500g
+          </h2>
+          <p>
+            Perfect option for a couple. Yields about 40 delectable cups.
+          </p>
+        </div>
+
+        <div class="order-items">
+          <h2>
+            1000g
+          </h2>
+          <p>
+            Perfect for offices and events. Yields about 90 delightful cups.
+          </p>
+        </div>
+
+      </div>
+
+
+      <!-- new -->
+
+
+
+      <div class="order-row">
+        <div class="order-heading">
+          <div class="order-heading-text">
+            <h1 id="grind-text">Want us to grind them?&emsp;&emsp;&emsp;&ensp;&nbsp;</h1>
+          </div>
+
+          <div id="arrow-grindPref" class="order-heading-arrow" >
+            <span id="arrow-grindPref-onclick" class="arrow" (click)="toggleOpen($event)">
+              <span id="sparrone"></span>
+              <span id="sparrtwo"></span>
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="order-column" id="grindPref">
+
+        <div class="order-items">
+          <h2>
+            Wholebean
+          </h2>
+          <p>
+            Best choice if you cherish the full sensory experience
+          </p>
+        </div>
+
+        <div class="order-items">
+          <h2>
+            Filter
+          </h2>
+          <p>
+            For drip or pour-over coffee methods such as V60 or Aeropress
+          </p>
+        </div>
+
+        <div class="order-items">
+          <h2>
+            Cafetiére
+          </h2>
+          <p>
+            Course ground beans specially suited for french press coffee
+          </p>
+        </div>
+
+      </div>
+
+
+      <!-- new -->
+
+      <div class="order-row">
+        <div class="order-heading">
+          <div class="order-heading-text">
+            <h1>How often should we deliver?&nbsp;&nbsp;&nbsp;</h1>
+          </div>
+
+          <div id="arrow-deliveryPref" class="order-heading-arrow">
+            <span class="arrow" (click)="toggleOpen($event)">
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="order-column" id="deliveryPref">
+
+        <div class="order-items">
+          <h2>
+            Every week
+          </h2>
+          <p>
+
+            <span id="weekCost">$14.00</span> per shipment. Includes free first-class shipping.
+          </p>
+        </div>
+
+        <div class="order-items">
+          <h2>
+            Every 2 weeks
+          </h2>
+          <p>
+            <span id="twoWeeksCost">$17.25</span> per shipment. Includes free priority shipping.
+          </p>
+        </div>
+
+        <div class="order-items">
+          <h2>
+            Every month
+          </h2>
+          <p>
+            <span id="monthCost">$22.50</span> per shipment. Includes free priority shipping.
+          </p>
+        </div>
+
+      </div>
+
+
+      <!-- new -->
+
+
+      <div class="order-summary">
+        <h2>Order Summary</h2>
+        <p id="order-summary-text">
+          "I drink my coffee using <span id="coffee-taste">_____</span>, with a <span id="coffee-type">_____</span> type of bean. <span id="coffee-quantity">_____</span> <span id="grind-off">ground ala</span> <span
+            id="coffee-grind">_____</span>,sent to me <span id="coffee-times">_____</span>."
+        </p>
+      </div>
+
+      <div class="button">
+        <button id="createPlan" disabled>
+          Create my plan!
+        </button>
+      </div>
+
+
+      <div class="inside-footer">
+        <footer>
+        
+          <!-- <div class="footer-div"> -->
+          <div class="footerLogo">
+            <a href="./index.html">
+              <img src="./assets/home/Combined Shape.png" alt="Coffee Beans">
+            </a>
+            <span>coffeeroasters</span>
+            <!-- <img src="./assets/home/coffeeroasters.png" alt="coffeeroasters"></a> -->
+          </div>
+        
+          <div class="footer-nav">
+            <nav>
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About us</a></li>
+                <li><a href="./plan.html">Create your plan</a></li>
+              </ul>
+            </nav>
+          </div>
+        
+          <div class="footer-socials">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+          </div>
+        
+          <!-- </div> -->
+        
+        </footer>
+        <div class="after-footer">
+        
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="popupOverlay">
+
+    <div class="popupContent">
+      <h2>
+        Order Summary
+      </h2>
+     <div id="summaryText">
+
+     </div>
+      <p class="check">
+        Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout.
+      </p>
+      <div class="costCheckOut">
+        <p id="cost"></p>
+        <button id="checkOut">Checkout</button>
+      </div>
+    </div>
+
+  </div>
+
+
+<div class="outside-footer">
+<footer>
+
+  <!-- <div class="footer-div"> -->
+  <div class="footerLogo">
+    <a href="./index.html">
+      <img src="./assets/home/Combined Shape.png" alt="Coffee Beans">
+    </a>
+    <span>coffeeroasters</span>
+    <!-- <img src="./assets/home/coffeeroasters.png" alt="coffeeroasters"></a> -->
+  </div>
+
+  <div class="footer-nav">
+    <nav>
+      <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about.html">About us</a></li>
+      <li><a href="./plan.html">Create your plan</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="footer-socials">
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-instagram"></a>
+  </div>
+
+  <!-- </div> -->
+
+</footer>
+<div class="after-footer">
+
+</div>
+</div>
+  
+
+
+
+  <script src="./resources/js/plan.js"></script>
+</body>
+
+</html>
