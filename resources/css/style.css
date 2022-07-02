@@ -100,7 +100,24 @@ html {
         /* justify-content: space-evenly; */
 
     }
-
+        a.btn {
+            height: 56px;
+                width: 217px;
+                /* left: 165px;
+                    top: 541px; */
+                background-color: #66D2CF;
+                text-decoration: none;
+                padding-top: 3%;
+                font-size: 18px;
+                font-weight: 900;
+                line-height: 25px;
+                letter-spacing: 0px;
+                text-align: center;
+                color: white;
+                border-radius: 5px;
+                font-family: 'Fraunces 9pt', serif;
+                border: none;
+        }
 
     .main-section-text {
         display: flex;
