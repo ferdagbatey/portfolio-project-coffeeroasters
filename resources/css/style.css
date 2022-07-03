@@ -12,6 +12,26 @@ html {
     background-color: #f2f2f2;
 }
 
+   a.btn {
+       height: 56px;
+       width: 217px;
+       /* left: 165px;
+                    top: 541px; */
+       background-color: #66D2CF;
+       text-decoration: none;
+       padding-top: 3%;
+       font-size: 18px;
+       font-weight: 900;
+       line-height: 25px;
+       letter-spacing: 0px;
+       text-align: center;
+       color: white;
+       border-radius: 5px;
+       font-family: 'Fraunces 9pt', serif;
+       border: none;
+
+   }
+
 /* Desktop */
 @media (min-width: 769px) {
     .collection-mobile {
@@ -100,24 +120,7 @@ html {
         /* justify-content: space-evenly; */
 
     }
-        a.btn {
-            height: 56px;
-                width: 217px;
-                /* left: 165px;
-                    top: 541px; */
-                background-color: #66D2CF;
-                text-decoration: none;
-                padding-top: 3%;
-                font-size: 18px;
-                font-weight: 900;
-                line-height: 25px;
-                letter-spacing: 0px;
-                text-align: center;
-                color: white;
-                border-radius: 5px;
-                font-family: 'Fraunces 9pt', serif;
-                border: none;
-        }
+     
 
     .main-section-text {
         display: flex;
@@ -515,12 +518,25 @@ html {
 
     .create-plan {
         position: absolute;
+        display: flex;
         width: 217px;
         height: 56px;
         left: 165px;
         top: 3131px;
+        
+      
+       
     }
 
+
+    .create-plan a{
+        display: flex;
+        flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+    }
+    
     footer {
         display: flex;
         flex-direction: row;
@@ -1067,6 +1083,27 @@ html {
 
     }
 
+         .create-plan {
+             position: absolute;
+             display: flex;
+             width: 217px;
+             height: 56px;
+             left: 165px;
+             top: 3131px;
+    
+    
+    
+         }
+    
+    
+         .create-plan a {
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+    
+         }
+
     .how-it-works-main {
 
 
@@ -1265,7 +1302,7 @@ html {
         flex-direction: row;
         /* justify-content: center; */
         align-items: center;
-        text-align: center;
+        /* text-align: center; */
         position: relative;
         top: 20px;
         right: 39px;
@@ -1281,7 +1318,7 @@ html {
         /* bottom: 10px; */
         /* padding-top: 10px; */
         /* margin-left: 5px; */
-
+        margin-left: 25px;
         flex: 1;
 
     }
@@ -1305,7 +1342,8 @@ html {
         margin: 6px 0;
         transition: 0.4s;
         position: relative;
-        left: 335px;
+        left: 300px;
+        margin-right: 25px;
         /* display: flex; */
         flex: 2;
     }
@@ -1717,6 +1755,29 @@ html {
         color: #FEFCF7;
 
     }
+
+
+         .create-plan {
+             position: relative;
+             display: flex;
+             justify-content: center;
+             /* width: 217px; */
+             /* height: 56px; */
+             /* left: 65px; */
+             /* top: 3131px; */
+    
+    
+    
+         }
+    
+    
+         .create-plan a {
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+    
+         }
 
     .how-it-works-main {
 
