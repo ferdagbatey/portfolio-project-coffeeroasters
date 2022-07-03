@@ -12,8 +12,8 @@ html {
 
 
 /* Desktop */
-/* @media (min-width: 769px) */
-@media (min-width: 1281px) {
+/* @media (min-width: 769px) and (max-width: 1680px) */
+@media (min-width: 769px) and (max-width: 1680px) {
     header {
         width: 100%;
         display: flex;
@@ -395,7 +395,8 @@ html {
 
 
 /* Tablet */
-@media (min-width: 481px) and (max-width: 1024px) {
+/* @media (min-width: 481px) and (max-width: 1024px) */
+@media (min-width: 481px) and (max-width: 768px) {
     body {
 
         background: #F2F2F2;

@@ -15,7 +15,8 @@ html {
 
 
 /* Desktop */
-@media (min-width: 769px) {
+/* @media (min-width: 769px) and (max-width: 1680px) */
+@media (min-width: 769px) and (max-width: 1680px){
     .template {
         display: none;
     }
@@ -707,7 +708,8 @@ html {
 }
 
 /* Tablet */
-@media (min-width: 481px) and (max-width: 1024px) {
+/* @media (min-width: 481px) and (max-width: 1024px) */
+@media (min-width: 481px) and (max-width: 768px) {
 
     body {
         position: absolute;
