@@ -17,7 +17,7 @@ html {
        width: 217px;
        /* left: 165px;
                     top: 541px; */
-       background-color: #66D2CF;
+    background: #0E8784;
        text-decoration: none;
        padding-top: 3%;
        font-size: 18px;
@@ -1441,6 +1441,7 @@ html {
         width: 279px;
         align-items: center;
         justify-content: space-evenly;
+       
     }
 
     .main-section-text p {
@@ -1452,7 +1453,7 @@ html {
         font-size: 15px;
         line-height: 25px;
 
-
+margin-bottom: 20px;
         color: #FEFCF7;
 
         mix-blend-mode: normal;
@@ -1631,8 +1632,8 @@ html {
         right: 24px;
         top: 2151px;
         border-radius: 10px;
-        margin-left: 30px;
-        margin-right: 40px;
+        /* margin-left: 30px;
+        margin-right: 40px; */
     }
 
     .why-choose-us .dark {
@@ -1758,15 +1759,9 @@ html {
 
 
          .create-plan {
-             position: relative;
+             position: absolute;
              display: flex;
-             justify-content: center;
-             /* width: 217px; */
-             /* height: 56px; */
-             /* left: 65px; */
-             /* top: 3131px; */
-    
-    
+             justify-content: center;   
     
          }
     
@@ -1881,20 +1876,20 @@ html {
     }
 
     footer {
-        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         justify-content: center;
         justify-items: center;
-        text-align: center;
+    
 
         width: 100%;
         height: 346px;
         left: 24px;
-        /* right: 24px; */
-        text-align: center;
+        right: 24px;
+       
+        position: absolute;
         top: 5200px;
         background: #2C343E;
         /* padding: 50px; */
