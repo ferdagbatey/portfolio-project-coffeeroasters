@@ -232,7 +232,8 @@ $(document).ready(() => {
     $('#createPlan').on('click', () => {
         console.log(document.getElementById('order-summary-text'))
         $('.popupOverlay, .popupContent').addClass('active');
-        window.scrollTo({ top: 100,  });
+        
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
         const summary = document.getElementById('order-summary-text');
         document.getElementById('summaryText').appendChild(summary)
        
